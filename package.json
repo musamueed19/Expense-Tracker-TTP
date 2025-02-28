@@ -1,0 +1,11 @@
+{
+  "name": "expense-tracker-ttp",
+  "version": "1.0.0",
+  "description": "A Modern MERN FullStack - Expense Tracker, a variant of Budget Buddy, helps you to efficiently maintain and be updated with your expenses and budget history, and have a saving buddy in your mobile device. with more future potential",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Musa Mueed",
+  "license": "MIT"
+}
