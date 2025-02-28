@@ -6,8 +6,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 // Auth Layout - wrapper component
 import AuthLayout from "../../components/layouts/AuthLayout";
-import Input from "../../components/layouts/Inputs/Input";
+
+// components for login form
+import Input from "../../components/Inputs/Input";
 import Button from "../../components/Buttons/Button";
+
+// email validator function
+import { validateEmail } from "../../utils/helper";
 
 // import
 
@@ -26,7 +31,7 @@ const Login = () => {
 
   return (
     <AuthLayout>
-      <div className="flex flex-col md:h-full lg:w-[70%] justify-center">
+      <div className="flex flex-col md:h-full lg:w-[70%] mt-10 md:mt-0 justify-center">
         <h3 className="text-xl font-semibold text-black">Welcome Back</h3>
         <p className="text-xs mb-6 mt-[5px] text-slate-700">
           Please enter your details to log in
@@ -91,9 +96,6 @@ const Login = () => {
     </AuthLayout>
   );
 
-
-
-
   // Handle Login Form Submit
   async function handleLogin(e) {
     e.preventDefault();
@@ -118,7 +120,7 @@ const Login = () => {
       return;
     }
 
-    setError(prev => null)
+    setError((prev) => null);
 
     // Login API Call
   }
